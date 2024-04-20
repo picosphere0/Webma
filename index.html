@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>webma | وبما</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imgs/favicon.ico" />  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontSize: {
+          sm: '0.618rem',
+          base: '1rem',
+          xl: '1.618rem',
+          '2xl': '2.618rem',
+          '3xl': '4.236rem',
+          '4xl': '6.854rem',
+          '5xl': '11.090rem',
+        },
+        fontFamily: {
+          heading: 'Vazirmatn',
+          body: 'Vazirmatn',
+        },
+        fontWeight: {
+          normal: '900',
+          bold: '900',
+        },
+        colors: {
+          'text': 'var(--text)',
+          'background': 'var(--background)',
+          'primary': 'var(--primary)',
+          'secondary': 'var(--secondary)',
+          'accent': 'var(--accent)',
+        },
+
+
+
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-mono bg-background text-text p-0 m-0">
+  <header class="mb-48">
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">WEBMA</span>
+        </a>
+        <button id="burger-btn" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                aria-current="page">قیمت ها</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">نظرات</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">نمونه کار ها</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <div class="hero text-3xl text-center p-24 heroImg ">
+      <div class="rightHero flex justify-center flex-col">
+        <h1 class="text-text">ساخت وبسایت سخته, ولی ما کار تو رو راحت می کنیم</h1>
+        <div class="btns">
+          <button class="text-xl p-5 rounded-xl text-center outline text-secondary outline-secondary py-4">چجوری؟</button>
+          <button class="text-xl p-5 rounded-xl text-center bg-primary">قیمت ها</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+  <article>
+    <section class="services mb-48 flex justify-center flex-wrap gap-8 text-center">
+      <div class="flex MakeBgHappen flex-col gap-6">
+        <h2 class="text-2xl">آپ تایم 99</h2>
+        <p>وب سایت شما هیچ وقت پایین نمی‌یاد</p>
+      </div>
+      <div class="flex MakeBgHappen flex-col gap-6">
+        <h2 class="text-2xl">بدون کد و طراحی</h2>
+        <p>شما نمی‌خواهید کد بنویسید، اون کار ماست!</p>
+      </div>
+      <div class="flex MakeBgHappen flex-col gap-6">
+        <h2 class="text-2xl">بدون هیچ کاری</h2>
+        <p>وب سایت شما هیچ وقت پایین نمی‌یاد</p>
+      </div>
+    </section>
+    
+    <section class="examples">
+      <div class="row1"></div>
+      <div class="row2"></div>
+    </section>
+    <section class="prices mb-48 flex relative justify-center mt-96">
+      <div class="priceBox dotPatternSecondary">
+        <h2 class="text-xl">ساده</h2>
+        <h3 class="text-xl">500<span class="text-sm">/ت</span></h3>
+        <h4>#features</h4>
+        <button class="btn bg-primary">خرید</button>
+      </div>
+      <div class="priceBox dotPatternSecondary">
+        <h2 class="text-xl">معمولی</h2>
+        <h3 class="text-xl">500<span class="text-sm">/ت</span></h3>
+        <h4>#features</h4>
+        <button class="btn bg-primary">خرید</button>
+      </div>
+      <div class="priceBox dotPatternSecondary">
+        <h2 class="text-xl">حرفه ای</h2>
+        <h3 class="text-xl">500<span class="text-sm">/ت</span></h3>
+        <h4>#features</h4>
+        <button class="btn bg-primary">خرید</button>
+      </div>
+    </section>
+    
+    <section class="finalCTA m-24 mb-48">
+      <h2 class="text-2xl text-right p-24">هنوز راضی نشدی!؟</h2>
+      <div class="dotPatternSecondary rounded-xl flex flex-col md:flex-row p-24 justify-between items-center">
+        <h3 class="text-2xl mb-4 md:mb-0">به ما پیام بده</h3>
+        <div class="form-container p-12">
+          <form class="flex flex-wrap gap-4 justify-center " action="https://formsubmit.co/your@email.com" method="POST">
+            <input type="text" name="message" class="input-field" placeholder="پیام" required>
+            <input type="text" name="name" class="input-field" placeholder="نام" required>
+            <input type="email" name="email" class="input-field" placeholder="ایمیل" required>
+            <button type="submit" class="submit-button">ارسال</button>
+          </form>
+        </div>
+        
+      </div>
+    </section>
+    
+  </article>
+  <footer class="rounded-xl dotPatternSecondary p-6 font-mono text-center">
+    <h2>WEBMA - copyright 2024</h2>
+  </footer>
+  <script>
+    const burgerBtn = document.getElementById('burger-btn');
+    const navbar = document.getElementById('navbar-default');
+  
+    burgerBtn.addEventListener('click', () => {
+      navbar.classList.toggle('hidden');
+    });
+  </script>
+  
+
+
+</body>
+
+</html>

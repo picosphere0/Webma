@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Vazirmatn:wght@100..900&display=swap');
+
+@layer base {
+    :root {
+        --text: #111213;
+        --background: #f9fafa;
+        --primary: #3b494e;
+        --secondary: #a0b5c0;
+        --accent: #587f93;
+    }
+
+    .dark {
+        --text: #ecedee;
+        --background: #050606;
+        --primary: #afbdc3;
+        --secondary: #405560;
+        --accent: #6b92a6;
+    }
+}
+
+
+
+body {
+    background-color: var(--background);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 0.1rem, transparent 0.1rem);
+    background-size: 5rem 5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button {
+    font-family: "Vazirmatn";
+    font-weight: bold;
+    text-shadow: 3px 2px 20px rgba(0, 0, 0, 0.25);
+}
+
+.priceBox {
+    border-radius: 0.625em;
+    padding: 0.625em;
+    margin: 0.625em;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.625em 1.25;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    border: none;
+    border-radius: 0.3125em;
+    cursor: pointer;
+}
+
+.dotPatternSecondary {
+    background-color: var(--secondary);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 0.2rem, transparent 0.2rem);
+    background-size: 3rem 3rem;
+}
+
+a {
+    transition: 0.3s;
+}
+
+a:hover {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.439) 0.2rem, transparent 0.2rem);
+    background-size: 3rem 3rem;
+    scale: 1.2;
+}
+
+.MakeBgHappen {
+    transition: 0.3s;
+}
+
+.MakeBgHappen:hover {
+    background-color: var(--secondary);
+    scale: 1.2;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.439) 0.1rem, transparent 0.1rem);
+    background-size: 5rem 5rem;
+    scale: 1.2;
+    margin: 1rem;
+}
+
+.heroImg {
+    border-radius: 2rem 3rem;
+    color: #111213;
+    background-image: url("imgs/24-beautiful-web-design-3073318638.jpg");
+}
+.prices {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .priceBox {
+    flex: 1;
+    margin: 0 0.625em;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .prices {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .priceBox {
+      width: 80%;
+      margin: 0.625em auto;
+    }
+  }
+  
+
+
+  .finalCTA {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  @media (min-width: 768px) {
+    .dotPatternSecondary {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  .services {
+    flex-wrap: wrap;
+  }
+  
+  .MakeBgHappen {
+    flex: 1;
+    max-width: 18.75em; /* Adjust as needed */
+  }
+  
+  @media (max-width: 48em) {
+    .services {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+
+  /* Same as before */
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    flex: 1;
+    min-width: 200px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .submit-button {
+    height: 40px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Responsive CSS */
+  @media only screen and (max-width: 768px) {
+    .input-field {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .submit-button {
+      width: 100%;
+    }
+  }
+  
